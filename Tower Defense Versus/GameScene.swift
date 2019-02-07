@@ -23,7 +23,8 @@ class GameScene: SKScene {
             label.run(SKAction.fadeIn(withDuration: 2.0))
         }
         
-        //this is a test
+        //testing
+        //testing
         
         // Create shape node to use during mouse interaction
         let w = (self.size.width + self.size.height) * 0.05
