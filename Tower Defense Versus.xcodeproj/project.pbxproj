@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E00DBC2227249CD00760655 /* ProjectileProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E00DBC1227249CD00760655 /* ProjectileProtocol.swift */; };
+		5E00DBC422724B9100760655 /* Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E00DBC322724B9100760655 /* Arrow.swift */; };
+		5E00DBC622724CD800760655 /* CannonBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E00DBC522724CD800760655 /* CannonBall.swift */; };
+		5E8FDB4A225FCE6800450B90 /* Cannon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FDB49225FCE6800450B90 /* Cannon.swift */; };
+		5E8FDB4C225FCE9E00450B90 /* ArcherTower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FDB4B225FCE9E00450B90 /* ArcherTower.swift */; };
+		5E8FDB4E225FCEAA00450B90 /* Catapult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FDB4D225FCEAA00450B90 /* Catapult.swift */; };
+		5E8FDB50225FCEC100450B90 /* Soldier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FDB4F225FCEC100450B90 /* Soldier.swift */; };
+		5E8FDB52225FD75F00450B90 /* TowerProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FDB51225FD75F00450B90 /* TowerProtocal.swift */; };
 		5EC18789220CECB0001AF220 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EC18788220CECB0001AF220 /* GoogleService-Info.plist */; };
 		5EC1878C220CEDE1001AF220 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC1878A220CEDE1001AF220 /* FirebaseCore.framework */; };
 		5EC1878D220CEDE1001AF220 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC1878B220CEDE1001AF220 /* FirebaseAnalytics.framework */; };
@@ -40,6 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E00DBC1227249CD00760655 /* ProjectileProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectileProtocol.swift; sourceTree = "<group>"; };
+		5E00DBC322724B9100760655 /* Arrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrow.swift; sourceTree = "<group>"; };
+		5E00DBC522724CD800760655 /* CannonBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CannonBall.swift; sourceTree = "<group>"; };
+		5E8FDB49225FCE6800450B90 /* Cannon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cannon.swift; sourceTree = "<group>"; };
+		5E8FDB4B225FCE9E00450B90 /* ArcherTower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcherTower.swift; sourceTree = "<group>"; };
+		5E8FDB4D225FCEAA00450B90 /* Catapult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catapult.swift; sourceTree = "<group>"; };
+		5E8FDB4F225FCEC100450B90 /* Soldier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soldier.swift; sourceTree = "<group>"; };
+		5E8FDB51225FD75F00450B90 /* TowerProtocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowerProtocal.swift; sourceTree = "<group>"; };
 		5EC18788220CECB0001AF220 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5EC1878A220CEDE1001AF220 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
 		5EC1878B220CEDE1001AF220 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
@@ -93,7 +109,7 @@
 		5EE8E5B32203B1DA000396F6 = {
 			isa = PBXGroup;
 			children = (
-				5EE8E5BE2203B1DA000396F6 /* Tower Defense Versus */,
+				5EE8E5BE2203B1DA000396F6 /* Tower-Defense-Versus */,
 				5EE8E5D92203B1DB000396F6 /* Tower Defense VersusTests */,
 				5EE8E5E42203B1DB000396F6 /* Tower Defense VersusUITests */,
 				5EE8E5BD2203B1DA000396F6 /* Products */,
@@ -110,7 +126,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5EE8E5BE2203B1DA000396F6 /* Tower Defense Versus */ = {
+		5EE8E5BE2203B1DA000396F6 /* Tower-Defense-Versus */ = {
 			isa = PBXGroup;
 			children = (
 				5EC1878E220CEE08001AF220 /* Firebase.h */,
@@ -127,8 +143,16 @@
 				5EE8E5CC2203B1DB000396F6 /* Assets.xcassets */,
 				5EE8E5CE2203B1DB000396F6 /* LaunchScreen.storyboard */,
 				5EE8E5D12203B1DB000396F6 /* Info.plist */,
+				5E8FDB49225FCE6800450B90 /* Cannon.swift */,
+				5E8FDB4B225FCE9E00450B90 /* ArcherTower.swift */,
+				5E8FDB4D225FCEAA00450B90 /* Catapult.swift */,
+				5E8FDB4F225FCEC100450B90 /* Soldier.swift */,
+				5E8FDB51225FD75F00450B90 /* TowerProtocal.swift */,
+				5E00DBC1227249CD00760655 /* ProjectileProtocol.swift */,
+				5E00DBC322724B9100760655 /* Arrow.swift */,
+				5E00DBC522724CD800760655 /* CannonBall.swift */,
 			);
-			path = "Tower Defense Versus";
+			path = "Tower-Defense-Versus";
 			sourceTree = "<group>";
 		};
 		5EE8E5D92203B1DB000396F6 /* Tower Defense VersusTests */ = {
@@ -283,9 +307,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E8FDB50225FCEC100450B90 /* Soldier.swift in Sources */,
+				5E8FDB4A225FCE6800450B90 /* Cannon.swift in Sources */,
+				5E00DBC622724CD800760655 /* CannonBall.swift in Sources */,
+				5E8FDB4C225FCE9E00450B90 /* ArcherTower.swift in Sources */,
+				5E00DBC422724B9100760655 /* Arrow.swift in Sources */,
+				5E8FDB52225FD75F00450B90 /* TowerProtocal.swift in Sources */,
 				5EE8E5C62203B1DA000396F6 /* GameScene.swift in Sources */,
 				5EE8E5C82203B1DA000396F6 /* GameViewController.swift in Sources */,
 				5EE8E5C02203B1DA000396F6 /* AppDelegate.swift in Sources */,
+				5E00DBC2227249CD00760655 /* ProjectileProtocol.swift in Sources */,
+				5E8FDB4E225FCEAA00450B90 /* Catapult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,7 +508,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "/Users/josephariganello/Tower-Defense-Versus";
+				USER_HEADER_SEARCH_PATHS = (
+					"/Users/josephariganello/Tower-Defense-Versus/Tower",
+					Defense,
+					Versus,
+				);
 			};
 			name = Debug;
 		};
@@ -500,7 +536,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "/Users/josephariganello/Tower-Defense-Versus";
+				USER_HEADER_SEARCH_PATHS = "/Users/josephariganello/Tower-Defense-Versus/Tower-Defense_Versus";
 			};
 			name = Release;
 		};
