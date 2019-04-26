@@ -14,17 +14,19 @@ class GameScene: SKScene {
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
     
+    var landBackground: SKTileMapNode!
+    var towers: SKTileMapNode!
+    var numberOfTowers: Int = 0
+    
     override func didMove(to view: SKView) {
         
-        // Get label node from scene and store it for use later
-        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
-        if let label = self.label {
-            label.alpha = 0.0
-            label.run(SKAction.fadeIn(withDuration: 2.0))
-        }
+        let soldier = Soldier(health_: 100, damage_: 1, movementSpeed_: 25)
+        soldier.scale(to: CGSize(width: 150, height: 150))
         
-        //testing
-        //testing
+        LoadSceneNodes()
+        
+        soldier.position = CGPoint(x: 0, y: 0)
+        addChild(soldier)
         
         // Create shape node to use during mouse interaction
         let w = (self.size.width + self.size.height) * 0.05
@@ -40,6 +42,12 @@ class GameScene: SKScene {
         }
     }
     
+    func LoadSceneNodes(){
+        guard let landBackground = childNode(withName: "landBackground") as? SKTileMapNode else{
+            fatalError("background was not loaded")
+        }
+        self.landBackground = landBackground
+    }
     
     func touchDown(atPoint pos : CGPoint) {
         if let n = self.spinnyNode?.copy() as! SKShapeNode? {
