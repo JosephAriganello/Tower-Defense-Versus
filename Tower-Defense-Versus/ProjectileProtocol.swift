@@ -11,17 +11,17 @@ import Foundation
 protocol Projectile{
     
     var projectileSpeed: Float {get}
-    var xPos: Int {get}
-    var yPos: Int {get}
+    var xPos: Float {get}
+    var yPos: Float {get}
     
     init(projectileSpeed_: Float, xPos_: Float, yPos_: Float)
     
     func SetProjectileSpeed(projectileSpeed_: Float)
-    func SetXPosition(xPos_: Int)
-    func SetYPosition(yPos_: Int)
+    func SetXPosition(xPos_: Float)
+    func SetYPosition(yPos_: Float)
     
     func GetProjectileSpeed() ->Float
-    func GetXPosition() ->Int
-    func GetYPosition() ->Int
+    func GetXPosition() ->Float
+    func GetYPosition() ->Float
     
 }

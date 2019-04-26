@@ -15,9 +15,6 @@
 		5E8FDB4E225FCEAA00450B90 /* Catapult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FDB4D225FCEAA00450B90 /* Catapult.swift */; };
 		5E8FDB50225FCEC100450B90 /* Soldier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FDB4F225FCEC100450B90 /* Soldier.swift */; };
 		5E8FDB52225FD75F00450B90 /* TowerProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FDB51225FD75F00450B90 /* TowerProtocal.swift */; };
-		5EC18789220CECB0001AF220 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EC18788220CECB0001AF220 /* GoogleService-Info.plist */; };
-		5EC1878C220CEDE1001AF220 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC1878A220CEDE1001AF220 /* FirebaseCore.framework */; };
-		5EC1878D220CEDE1001AF220 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC1878B220CEDE1001AF220 /* FirebaseAnalytics.framework */; };
 		5EE8E5C02203B1DA000396F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE8E5BF2203B1DA000396F6 /* AppDelegate.swift */; };
 		5EE8E5C22203B1DA000396F6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5EE8E5C12203B1DA000396F6 /* GameScene.sks */; };
 		5EE8E5C42203B1DA000396F6 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5EE8E5C32203B1DA000396F6 /* Actions.sks */; };
@@ -56,11 +53,6 @@
 		5E8FDB4D225FCEAA00450B90 /* Catapult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catapult.swift; sourceTree = "<group>"; };
 		5E8FDB4F225FCEC100450B90 /* Soldier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soldier.swift; sourceTree = "<group>"; };
 		5E8FDB51225FD75F00450B90 /* TowerProtocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowerProtocal.swift; sourceTree = "<group>"; };
-		5EC18788220CECB0001AF220 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		5EC1878A220CEDE1001AF220 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
-		5EC1878B220CEDE1001AF220 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		5EC1878E220CEE08001AF220 /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
-		5EC1878F220CEE08001AF220 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		5EE8E5BC2203B1DA000396F6 /* Tower Defense Versus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tower Defense Versus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EE8E5BF2203B1DA000396F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EE8E5C12203B1DA000396F6 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -84,8 +76,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EC1878D220CEDE1001AF220 /* FirebaseAnalytics.framework in Frameworks */,
-				5EC1878C220CEDE1001AF220 /* FirebaseCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,11 +119,6 @@
 		5EE8E5BE2203B1DA000396F6 /* Tower-Defense-Versus */ = {
 			isa = PBXGroup;
 			children = (
-				5EC1878E220CEE08001AF220 /* Firebase.h */,
-				5EC1878F220CEE08001AF220 /* module.modulemap */,
-				5EC1878B220CEDE1001AF220 /* FirebaseAnalytics.framework */,
-				5EC1878A220CEDE1001AF220 /* FirebaseCore.framework */,
-				5EC18788220CECB0001AF220 /* GoogleService-Info.plist */,
 				5EE8E5BF2203B1DA000396F6 /* AppDelegate.swift */,
 				5EE8E5C12203B1DA000396F6 /* GameScene.sks */,
 				5EE8E5C32203B1DA000396F6 /* Actions.sks */,
@@ -282,7 +267,6 @@
 				5EE8E5CD2203B1DB000396F6 /* Assets.xcassets in Resources */,
 				5EE8E5D02203B1DB000396F6 /* LaunchScreen.storyboard in Resources */,
 				5EE8E5C42203B1DA000396F6 /* Actions.sks in Resources */,
-				5EC18789220CECB0001AF220 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,7 +482,7 @@
 					"$(PROJECT_DIR)/Tower\\ Defense\\ Versus",
 					"$(PROJECT_DIR)/Tower\\ Defense\\ Versus",
 				);
-				INFOPLIST_FILE = "Tower Defense Versus/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Tower-Defense-Versus/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -526,7 +510,7 @@
 					"$(PROJECT_DIR)/Tower\\ Defense\\ Versus",
 					"$(PROJECT_DIR)/Tower\\ Defense\\ Versus",
 				);
-				INFOPLIST_FILE = "Tower Defense Versus/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Tower-Defense-Versus/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

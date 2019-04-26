@@ -29,8 +29,9 @@ class Cannon: SKSpriteNode, Tower{
         yPos = yPos_
         rotation = rotation_
         scale = scale_
+        inRange = false
         
-        let texture = SKTexture.init(imageNamed: "Cannon")
+        let texture = SKTexture.init(imageNamed: "Cannon.png")
         super.init(texture: texture, color: UIColor.clear, size: texture.size())
     }
         
@@ -39,7 +40,6 @@ class Cannon: SKSpriteNode, Tower{
     }
     
     func Shoot() {
-        let bullet = CannonBall(projectileSpeed_: 25, xPos_: GetXPosition(), yPos_: GetYPosition())
         
     }
     

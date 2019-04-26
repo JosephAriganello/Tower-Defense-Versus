@@ -11,8 +11,7 @@ import SpriteKit
 import GameplayKit
 
 class ArcherTower: SKSpriteNode, Tower{
-    
-    
+   
     var range: Int
     var damage: Int
     var aoeDamage: Int
@@ -30,8 +29,9 @@ class ArcherTower: SKSpriteNode, Tower{
         yPos = yPos_
         rotation = rotation_
         scale = scale_
+        inRange = false
         
-        let texture = SKTexture.init(imageNamed: "ArrowTower")
+        let texture = SKTexture.init(imageNamed: "ArrowTower.png")
         super.init(texture: texture, color: UIColor.clear, size: texture.size())
     }
     
@@ -40,7 +40,7 @@ class ArcherTower: SKSpriteNode, Tower{
     }
     
     func Shoot() {
-        <#code#>
+        
     }
     
     func SetRange(range_: Int) {

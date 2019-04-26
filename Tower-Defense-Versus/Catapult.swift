@@ -30,9 +30,10 @@ class Catapult: SKSpriteNode, Tower{
         yPos = yPos_
         rotation = rotation_
         scale = scale_
+        inRange = false
         
-       // let texture = SKTexture.init(imageNamed: "Catapult")
-       // super.init(texture: texture, UIColor.clear, size: texture.size())
+        let texture = SKTexture.init(imageNamed: "Catapult.png")
+        super.init(texture: texture, color: UIColor.clear, size: texture.size())
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -40,7 +41,7 @@ class Catapult: SKSpriteNode, Tower{
     }
     
     func Shoot() {
-        <#code#>
+        
     }
     
     func SetRange(range_: Int) {

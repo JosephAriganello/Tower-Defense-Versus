@@ -21,7 +21,7 @@ class Soldier : SKSpriteNode, SKPhysicsContactDelegate{
         damage = damage_
         movementSpeed = movementSpeed_
         
-        let texture = SKTexture.init(imageNamed: "Cannon")
+        let texture = SKTexture.init(imageNamed: "Cannon.png")
         super.init(texture: texture, color: UIColor.clear, size: texture.size())
     }
     

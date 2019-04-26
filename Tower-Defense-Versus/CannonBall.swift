@@ -13,15 +13,15 @@ import GameKit
 class CannonBall: SKSpriteNode, Projectile{
     
     var projectileSpeed: Float
-    var xPos: Int
-    var yPos: Int
+    var xPos: Float
+    var yPos: Float
     
     required init(projectileSpeed_: Float, xPos_: Float, yPos_: Float) {
         projectileSpeed = projectileSpeed_
         xPos = xPos_
         yPos = yPos_
         
-        let texture = SKTexture.init(imageNamed: "Cannonball")
+        let texture = SKTexture.init(imageNamed: "Cannonball.png")
         super.init(texture: texture, color: UIColor.clear, size: texture.size())
     }
     
@@ -33,11 +33,11 @@ class CannonBall: SKSpriteNode, Projectile{
         projectileSpeed = projectileSpeed_
     }
     
-    func SetXPosition(xPos_: Int) {
+    func SetXPosition(xPos_: Float) {
         xPos = xPos_
     }
     
-    func SetYPosition(yPos_: Int) {
+    func SetYPosition(yPos_: Float) {
         yPos = yPos_
     }
     
@@ -45,11 +45,11 @@ class CannonBall: SKSpriteNode, Projectile{
         return projectileSpeed
     }
     
-    func GetXPosition() -> Int {
+    func GetXPosition() -> Float {
         return xPos
     }
     
-    func GetYPosition() -> Int {
+    func GetYPosition() -> Float {
         return yPos
     }
     
