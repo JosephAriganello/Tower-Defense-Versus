@@ -18,15 +18,29 @@ class GameScene: SKScene {
     var towers: SKTileMapNode!
     var numberOfTowers: Int = 0
     
+    let soldier = Soldier(health_: 100, damage_: 1, movementSpeed_: 25)
+    
+    let cannon = Cannon(range_: 600, damage_: 100, aoeDamage_: 5, xPos_: 200, yPos_: -500, rotation_: 0, scale_: 1)
+    
     override func didMove(to view: SKView) {
         
-        let soldier = Soldier(health_: 100, damage_: 1, movementSpeed_: 25)
         soldier.scale(to: CGSize(width: 150, height: 150))
+        cannon.scale(to: CGSize(width: 150, height: 150))
+        
+        let moveSoldier1 = SKAction.moveBy(x: 0, y: -550, duration: 5)
+        let moveSoldier2 = SKAction.moveBy(x: 400, y: 0, duration: 4)
+        let moveSoldier3 = SKAction.moveBy(x: 0, y: -400, duration: 4)
+        let sequence = SKAction.sequence([moveSoldier1, moveSoldier2, moveSoldier3])
         
         LoadSceneNodes()
         
-        soldier.position = CGPoint(x: 0, y: 0)
+        soldier.position = CGPoint(x: -850, y: 475)
+        soldier.zRotation = 180
+        cannon.position = CGPoint(x: -300, y: -500)
         addChild(soldier)
+        addChild(cannon)
+        
+        soldier.run(sequence)
         
         // Create shape node to use during mouse interaction
         let w = (self.size.width + self.size.height) * 0.05
@@ -47,6 +61,29 @@ class GameScene: SKScene {
             fatalError("background was not loaded")
         }
         self.landBackground = landBackground
+        
+        /*let graph = GKGridGraph(fromGridStartingAt: vector_int2(0,0), width: Int32(landBackground.numberOfColumns), height: Int32(landBackground.numberOfRows), diagonalsAllowed: false)
+        
+        var notWalkable = [GKGridGraphNode]()
+        
+        for column in 0..<landBackground.numberOfColumns{
+        
+            for row in 0..<landBackground.numberOfRows{
+            
+                let position = landBackground.centerOfTile(atColumn: column, row: row)
+                
+                guard let definition = landBackground.tileDefinition(atColumn: column, row: row) else { continue }
+                guard let userData = definition.userData else { continue }
+                guard let isWalkable = userData["isWalkable"] else { continue }
+                
+                if isWalkable as! Bool{
+                    let grassNode = graph.node(atGridPosition: vector_int2(Int32(column), Int32(row)))!
+                    notWalkable.append(grassNode)
+                }
+            }
+        }
+        
+        graph.remove(notWalkable)*/
     }
     
     func touchDown(atPoint pos : CGPoint) {
@@ -96,5 +133,12 @@ class GameScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
+        
+        let distanceY = cannon.position.y - soldier.position.y
+        
+        if distanceY < 500.0{
+            
+        }
+        
     }
 }
