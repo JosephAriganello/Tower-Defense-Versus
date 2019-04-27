@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E00DBC2227249CD00760655 /* ProjectileProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E00DBC1227249CD00760655 /* ProjectileProtocol.swift */; };
+		5E00DBC422724B9100760655 /* Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E00DBC322724B9100760655 /* Arrow.swift */; };
+		5E00DBC622724CD800760655 /* CannonBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E00DBC522724CD800760655 /* CannonBall.swift */; };
+		5E8FDB4A225FCE6800450B90 /* Cannon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FDB49225FCE6800450B90 /* Cannon.swift */; };
+		5E8FDB4C225FCE9E00450B90 /* ArcherTower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FDB4B225FCE9E00450B90 /* ArcherTower.swift */; };
+		5E8FDB4E225FCEAA00450B90 /* Catapult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FDB4D225FCEAA00450B90 /* Catapult.swift */; };
+		5E8FDB50225FCEC100450B90 /* Soldier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FDB4F225FCEC100450B90 /* Soldier.swift */; };
+		5E8FDB52225FD75F00450B90 /* TowerProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FDB51225FD75F00450B90 /* TowerProtocal.swift */; };
+		5EC30E6B22739FDA00EF6C17 /* Map.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5EC30E6922739FDA00EF6C17 /* Map.sks */; };
+		5EC30E6C22739FDA00EF6C17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EC30E6A22739FDA00EF6C17 /* Assets.xcassets */; };
 		5EE8E5C02203B1DA000396F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE8E5BF2203B1DA000396F6 /* AppDelegate.swift */; };
 		5EE8E5C22203B1DA000396F6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5EE8E5C12203B1DA000396F6 /* GameScene.sks */; };
 		5EE8E5C42203B1DA000396F6 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5EE8E5C32203B1DA000396F6 /* Actions.sks */; };
@@ -37,6 +47,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E00DBC1227249CD00760655 /* ProjectileProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectileProtocol.swift; sourceTree = "<group>"; };
+		5E00DBC322724B9100760655 /* Arrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrow.swift; sourceTree = "<group>"; };
+		5E00DBC522724CD800760655 /* CannonBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CannonBall.swift; sourceTree = "<group>"; };
+		5E8FDB49225FCE6800450B90 /* Cannon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cannon.swift; sourceTree = "<group>"; };
+		5E8FDB4B225FCE9E00450B90 /* ArcherTower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcherTower.swift; sourceTree = "<group>"; };
+		5E8FDB4D225FCEAA00450B90 /* Catapult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catapult.swift; sourceTree = "<group>"; };
+		5E8FDB4F225FCEC100450B90 /* Soldier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soldier.swift; sourceTree = "<group>"; };
+		5E8FDB51225FD75F00450B90 /* TowerProtocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowerProtocal.swift; sourceTree = "<group>"; };
+		5EC30E6922739FDA00EF6C17 /* Map.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Map.sks; sourceTree = "<group>"; };
+		5EC30E6A22739FDA00EF6C17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EE8E5BC2203B1DA000396F6 /* Tower Defense Versus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tower Defense Versus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EE8E5BF2203B1DA000396F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EE8E5C12203B1DA000396F6 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -83,7 +103,8 @@
 		5EE8E5B32203B1DA000396F6 = {
 			isa = PBXGroup;
 			children = (
-				5EE8E5BE2203B1DA000396F6 /* Tower Defense Versus */,
+				5EC30E6A22739FDA00EF6C17 /* Assets.xcassets */,
+				5EE8E5BE2203B1DA000396F6 /* Tower-Defense-Versus */,
 				5EE8E5D92203B1DB000396F6 /* Tower Defense VersusTests */,
 				5EE8E5E42203B1DB000396F6 /* Tower Defense VersusUITests */,
 				5EE8E5BD2203B1DA000396F6 /* Products */,
@@ -100,7 +121,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5EE8E5BE2203B1DA000396F6 /* Tower Defense Versus */ = {
+		5EE8E5BE2203B1DA000396F6 /* Tower-Defense-Versus */ = {
 			isa = PBXGroup;
 			children = (
 				5EE8E5BF2203B1DA000396F6 /* AppDelegate.swift */,
@@ -109,11 +130,20 @@
 				5EE8E5C52203B1DA000396F6 /* GameScene.swift */,
 				5EE8E5C72203B1DA000396F6 /* GameViewController.swift */,
 				5EE8E5C92203B1DA000396F6 /* Main.storyboard */,
+				5EC30E6922739FDA00EF6C17 /* Map.sks */,
 				5EE8E5CC2203B1DB000396F6 /* Assets.xcassets */,
 				5EE8E5CE2203B1DB000396F6 /* LaunchScreen.storyboard */,
 				5EE8E5D12203B1DB000396F6 /* Info.plist */,
+				5E8FDB49225FCE6800450B90 /* Cannon.swift */,
+				5E8FDB4B225FCE9E00450B90 /* ArcherTower.swift */,
+				5E8FDB4D225FCEAA00450B90 /* Catapult.swift */,
+				5E8FDB4F225FCEC100450B90 /* Soldier.swift */,
+				5E8FDB51225FD75F00450B90 /* TowerProtocal.swift */,
+				5E00DBC1227249CD00760655 /* ProjectileProtocol.swift */,
+				5E00DBC322724B9100760655 /* Arrow.swift */,
+				5E00DBC522724CD800760655 /* CannonBall.swift */,
 			);
-			path = "Tower Defense Versus";
+			path = "Tower-Defense-Versus";
 			sourceTree = "<group>";
 		};
 		5EE8E5D92203B1DB000396F6 /* Tower Defense VersusTests */ = {
@@ -238,9 +268,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC30E6B22739FDA00EF6C17 /* Map.sks in Resources */,
 				5EE8E5CB2203B1DA000396F6 /* Main.storyboard in Resources */,
 				5EE8E5C22203B1DA000396F6 /* GameScene.sks in Resources */,
 				5EE8E5CD2203B1DB000396F6 /* Assets.xcassets in Resources */,
+				5EC30E6C22739FDA00EF6C17 /* Assets.xcassets in Resources */,
 				5EE8E5D02203B1DB000396F6 /* LaunchScreen.storyboard in Resources */,
 				5EE8E5C42203B1DA000396F6 /* Actions.sks in Resources */,
 			);
@@ -267,9 +299,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E8FDB50225FCEC100450B90 /* Soldier.swift in Sources */,
+				5E8FDB4A225FCE6800450B90 /* Cannon.swift in Sources */,
+				5E00DBC622724CD800760655 /* CannonBall.swift in Sources */,
+				5E8FDB4C225FCE9E00450B90 /* ArcherTower.swift in Sources */,
+				5E00DBC422724B9100760655 /* Arrow.swift in Sources */,
+				5E8FDB52225FD75F00450B90 /* TowerProtocal.swift in Sources */,
 				5EE8E5C62203B1DA000396F6 /* GameScene.swift in Sources */,
 				5EE8E5C82203B1DA000396F6 /* GameViewController.swift in Sources */,
 				5EE8E5C02203B1DA000396F6 /* AppDelegate.swift in Sources */,
+				5E00DBC2227249CD00760655 /* ProjectileProtocol.swift in Sources */,
+				5E8FDB4E225FCEAA00450B90 /* Catapult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,15 +485,26 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Tower Defense Versus/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tower\\ Defense\\ Versus",
+					"$(PROJECT_DIR)/Tower\\ Defense\\ Versus",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Tower-Defense-Versus/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "HSFG.Tower-Defense-Versus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"/Users/josephariganello/Tower-Defense-Versus/Tower",
+					Defense,
+					Versus,
+				);
 			};
 			name = Debug;
 		};
@@ -462,15 +513,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Tower Defense Versus/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tower\\ Defense\\ Versus",
+					"$(PROJECT_DIR)/Tower\\ Defense\\ Versus",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Tower-Defense-Versus/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "HSFG.Tower-Defense-Versus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "/Users/josephariganello/Tower-Defense-Versus/Tower-Defense_Versus";
 			};
 			name = Release;
 		};
